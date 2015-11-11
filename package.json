@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Parse your HTML and generate the fontello config file",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "test": "mocha test/test.js",
     "coverage": "istanbul cover _mocha -- test/test.js -R spec"
