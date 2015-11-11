@@ -1,0 +1,420 @@
+---
+meta:
+  author: Crowdsourced, for Fontello project
+  github: https://github.com/fontello/brandico.font
+  license: SIL
+  license_url: http://scripts.sil.org/OFL
+
+  css_prefix_text: "icon-"
+  columns: 4
+
+#transform:
+#  baseline: 0.5
+#  rescale: 0.95
+#  offset: 0.025
+
+font:
+  # use !!!small!!! letters a-z, or Opera will fail under OS X
+  # fontname will be also used as file name.
+  fontname: brandico
+
+  fullname: Brandico
+  familyname: Brandico
+
+  copyright: (C) 2012 by Vitaly Puzrin
+
+  ascent: 850
+  descent: -150
+
+
+glyphs:
+
+  - code: 0xf300
+    uid: 240979dd9fcf2e46250e66792edb8092
+    css: facebook
+    meta:
+      author: Facebook
+      homepage: http://www.facebook.com/brandpermissions/logos.php
+    search: [facebook]
+
+  - code: 0xf301
+    uid: 8045477f6a7ef0bd7caff130ad25b88d
+    css: facebook-rect
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [facebook]
+
+  - code: 0xf302
+    uid: d611dd319d8c13b4551dc5bd85c1bdfd
+    css: twitter
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [twitter]
+
+  - code: 0xf303
+    uid: 4c01f5d3ba5fbf029bca8630cce41e6a
+    css: twitter-bird
+    transform:
+      rescale: 0.9
+      offset: 0.05
+    meta:
+      author: Twitter
+      homepage: https://twitter.com/about/resources/logos
+    search: [twitter]
+
+  - code: 0xf30f
+    uid: 70cdf244c51630e09038659d1dcbee87
+    css: vimeo
+    transform:
+      rescale: 0.8
+      offset: 0.05
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [vimeo]
+
+  - code: 0xf30e
+    uid: 31483d870b3f14ac12bdfe7331a6af99
+    css: vimeo-rect
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [vimeo]
+
+  - code: 0xf311
+    uid: 076f25da90f45dd112e006f2cd7ea76b
+    css: tumblr
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [tumblr]
+
+  - code: 0xf310
+    uid: 9e6a3483242474b6a1f77739ae3fdfdc
+    css: tumblr-rect
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [tumblr]
+
+  - code: 0xf309
+    uid: 626fb97a7c0c0db53a1853fb9e96e223
+    css: googleplus-rect
+    meta:
+      author: Google
+      homepage: http://www.google.com/+/business/brand-guidelines.html
+    search: [google]
+
+  - code: 0xf307
+    uid: 24d1008bf15b6c02a5e7a6af026987dd
+    css: github-text
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [github]
+
+  - code: 0xf308
+    uid: 4a0bb1ac004980bb3837560d4c9e8cee
+    css: github
+    transform:
+      rescale: 0.9
+      offset: 0.05
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [github]
+
+  - code: 0xf30b
+    uid: 5a00c877da3f63d37cdc021815e3f5a9
+    css: skype
+    meta:
+      author: Alex Peattie
+      homepage: http://www.alexpeattie.com/projects/justvector_icons/
+    search: [skype]
+
+  - code: 0xf304
+    uid: 01f67de2dc0137389f1c3aced6273acd
+    css: icq
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [icq]
+
+
+  - code: 0xf305
+    uid: b2417d1ce399577d53fff70d54976fea
+    css: yandex
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [yandex]
+
+  - code: 0xf306
+    uid: ea0cb6bedac64ae7933b03dad3130ef6
+    css: yandex-rect
+    meta:
+      author: Vitaly Puzrin
+      github: https://github.com/puzrin
+      twitter: https://twitter.com/puzrin
+    search: [yandex]
+
+  - code: 0xf30a
+    uid: 5b16ceef1c8638bd5389c9302ea04098
+    css: vkontakte-rect
+    meta:
+      author: Vkontakte
+      homepage: http://vk.com/help.php?page=about
+    search: [vkontakte]
+
+  - code: 0xf30c
+    uid: 229e50061df526f24f1ae884fab52101
+    css: odnoklassniki
+    meta:
+      author: MailRu Group
+      homepage: http://corp.mail.ru/communications/odnoklassniki
+    search: [odnoklassniki]
+
+  - code: 0xf30d
+    uid: 4a02cc611ae9fb342d6026b2ed6cc44e
+    css: odnoklassniki-rect
+    meta:
+      author: MailRu Group
+      homepage: http://corp.mail.ru/communications/odnoklassniki
+    search: [odnoklassniki]
+
+
+  - code: 0xf312
+    uid: eeec90e0e80f11e1aff10800200c9a66
+    css: friendfeed
+    meta:
+      author: Open Icon Library
+      homepage: http://openiconlibrary.sourceforge.net
+    search: [friendfeed]
+
+  - code: 0xf313
+    uid: 41f4dd00e81111e1aff10800200c9a66
+    css: friendfeed-rect
+    meta:
+      author: Open Icon Library
+      homepage: http://openiconlibrary.sourceforge.net
+    search: [friendfeed]
+
+  - code: 0xf314
+    uid: 303f1f30-eda7-11e1-aff1-0800200c9a66
+    css: blogger
+    meta:
+      author: Open Clip Art Library
+      homepage: https://openclipart.org/
+    search: [blogger]
+
+  - code: 0xf315
+    uid: a38dfae0ec2d11e1aff10800200c9a66
+    css: blogger-rect
+    meta:
+      author: Open Clip Art Library
+      homepage: https://openclipart.org/
+    search: [blogger]
+
+
+  - code: 0xf316
+    uid: d04790a0ec2d11e1aff10800200c9a66
+    css: deviantart
+    transform:
+      rescale: 1.2
+      offset: -0.025
+    meta:
+      author: Open Icon Library
+      homepage: http://openiconlibrary.sourceforge.net
+    search: [deviantart]
+
+
+  - code: 0xf317
+    uid: 466d1430ec2e11e1aff10800200c9a66
+    css: jabber
+    meta:
+      author: Jabber Software Foundation
+      homepage: http://xmpp.org
+    search: [jabber]
+
+
+  - code: 0xf318
+    uid: 9e237480ec2e11e1aff10800200c9a66
+    css: lastfm
+    meta:
+      author: Last.fm
+      homepage: http://www.last.fm/resources
+    search: [lastfm]
+
+  - code: 0xf319
+    uid: 53a3bbcda09740c98a1c3d2e0a6a89fb
+    css: lastfm-rect
+    meta:
+      author: Last.fm
+      homepage: http://www.last.fm/resources
+    search: [lastfm]
+
+
+  - code: 0xf31a
+    uid: 542e3f055aaa4ddfb9ab3e00397db47f
+    css: linkedin
+    meta:
+      author: Open Icon Library
+      homepage: http://openiconlibrary.sourceforge.net
+    search: [linkedin]
+
+  - code: 0xf31b
+    uid: e9e96618b0f44170930f9b179237c76e
+    css: linkedin-rect
+    meta:
+      author: Open Icon Library
+      homepage: http://openiconlibrary.sourceforge.net
+    search: [linkedin]
+
+  - code: 0xf31c
+    uid: d93230ef6fa54fb9805ba4cc9d9af5b1
+    css: picasa
+    meta:
+      author: Open Icon Library
+      homepage: http://openiconlibrary.sourceforge.net
+    search: [picasa]
+
+  - code: 0xf31d
+    uid: 1357ba39f8dc4519949cc4da55226b62
+    css: wordpress
+    meta:
+      author: Open Icon Library
+      homepage: http://openiconlibrary.sourceforge.net
+    search: [wordpress]
+
+  - code: 0xf31e
+    uid: dad4e7f8dc2e57c92cffc0231202d9a0
+    css: instagram
+    meta:
+      author: Kyle Mac
+      homepage: http://dribbble.com/shots/690589-Instagram-Vector-Icon-Download
+    search: [instagram]
+
+  - code: 0xf31f
+    uid: cc20f2a7fa05a475130c406740bbbd26
+    css: instagram-filled
+    meta:
+      author: Kyle Mac
+      homepage: http://dribbble.com/shots/690589-Instagram-Vector-Icon-Download
+    search: [instagram]
+
+  - code: 0xf320
+    uid: ca1c321a95f268ed0e54e7ba11a8264d
+    css: diigo
+    meta:
+      author: Ivo Gregurec
+      email: ivo.gregurec@gmail.com
+    search: [diigo]
+
+  - css: box
+    code: 0xf321
+    uid: 968e63a0a36311e29e960800200c9a66
+    meta:
+      author: Jesse Clark
+      homepage: http://developers.box.com/branding/
+    search: [box]
+
+  - css: box-rect
+    code: 0xf322
+    uid: d52050c0a36711e29e960800200c9a66
+    meta:
+      author: Jesse Clark
+      homepage: http://developers.box.com/branding/
+    search: [box]
+
+  - css: tudou
+    code: 0xf323
+    uid: 5d312ed68325656686a91f6da8fa04bd
+    meta:
+      author: Davis Yeung
+      email: ckyeung.davis@gmail.com
+    search: [tudou]
+
+  - css: youku
+    code: 0xf324
+    uid: c874a7b43d3f61059bd6db64fc7d6cb3
+    meta:
+      author: Davis Yeung
+      email: ckyeung.davis@gmail.com
+    search: [youku]
+
+  - css: win8
+    code: 0xf325
+    uid: 3f06cdfffd60c5968c601a2e6c8f9a1b
+    meta:
+      author: Davis Yeung
+      email: ckyeung.davis@gmail.com
+    search: [windows]
+
+  - css: amex
+    code: 0xf326
+    uid: ca0f6425e0c44d613febeb0f23fa8ddf
+    meta:
+      author: Richard Burton
+      homepage: http://rb.cm
+    search: [amex]
+
+  - css: discover
+    code: 0xf327
+    uid: bbabc3d5d970358cec0a6d19a396b562
+    meta:
+      author: Richard Burton
+      homepage: http://rb.cm
+    search: [discover]
+
+  - css: visa
+    code: 0xf328
+    uid: cd65196712e52477b9252b4b296b0c44
+    meta:
+      author: Richard Burton
+      homepage: http://rb.cm
+    search: [visa]
+
+  - css: mastercard
+    code: 0xf329
+    uid: c3043114c56d36658e5cae51d36281c8
+    meta:
+      author: Richard Burton
+      homepage: http://rb.cm
+    search: [mastercard]
+
+  - css: houzz
+    code: 0xf32a
+    uid: bf819a687a180e0e02ef319600c99d3b
+    meta:
+      author: Jason Mook
+      email: jason.mook@gmail.com
+    search: [houzz]
+
+  - css: bandcamp
+    code: 0xf32b
+    uid: 2518846ee21c610004effeae5cb8f9cc
+    meta:
+      author: Fleuv
+      email: fleuv@live.com
+    search: [bandcamp]
+
+  - css: codepen
+    code: 0xf32c
+    uid: 155970c9f52b23f31026bab7163caa63
+    meta:
+      author: hemorej
+      email: jerome.arfouche@gmail.com
+    search: [codepen, code, pen]
+

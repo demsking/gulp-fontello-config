@@ -1,0 +1,264 @@
+---
+meta:
+  author: Alessio Atzeni
+  homepage: http://www.alessioatzeni.com
+  email: info@alessioatzeni.com
+  twitter: http://twitter.com/bluxart
+  dribbble: http://dribbble.com/Bluxart
+  license: SIL
+  license_url: http://scripts.sil.org/OFL
+
+  css_prefix_text: "icon-"
+  columns: 4
+
+font:
+  # use !!!small!!! letters a-z, or Opera will fail under OS X
+  # fontname will be also used as file name.
+  fontname: meteocons
+
+  fullname: Meteocons
+  familyname: Meteocons
+
+  copyright: Copyright (C) 2012 by Alessio Atzeni
+
+  ascent: 850
+  descent: -150
+  weight: Normal
+
+
+glyphs:
+  -
+    css: windy-rain-inv
+    code: 0x21
+    uid: b69ac48f8ad98e786047ff3d33101045
+    search: [windy, rain, weather]
+  -
+    css: snow-inv
+    code: 0x22
+    uid: 87cf185e0420ff98e04406c0fbb873eb
+    search: [snow, weather]
+  -
+    css: snow-heavy-inv
+    code: 0x23
+    uid: f1315f7ea135cbea7966cce0e7c10ce0
+    search: [snow, weather]
+  -
+    css: hail-inv
+    code: 0x24
+    uid: ab5c31256cdd1f6b2d6de7202936f5a1
+    search: [hail, weather]
+  -
+    css: clouds-inv
+    code: 0x25
+    uid: 8f1bbb4667a8372dc4bb7de767f22f11
+    search: [clouds, weather]
+  -
+    css: clouds-flash-inv
+    code: 0x26
+    uid: b2b73369982f91cddf8ec5f2a692e5ea
+    search: [clouds, flash, weather]
+  -
+    css: temperature
+    code: 0x27
+    uid: 906a8ebb0faf8db0411028a0364bb16d
+    search: [temperature, weather]
+  -
+    css: compass
+    code: 0x28
+    uid: a6a5b2ea227f86157ba54ae543785161
+    search: [compass, weather]
+  -
+    css: na
+    code: 0x29
+    uid: 053a1eaf96184e74876f45bd0f4970eb
+    search: [not available, weather]
+  -
+    css: celcius
+    code: 0x2a
+    uid: 39a24b1eb625a4a551585745107e8ef0
+    search: [celcius]
+  -
+    css: fahrenheit
+    code: 0x2b
+    uid: 5478f7c5cc0ad4897835f711eccea4dd
+    search: [fahrenheit, weather]
+  -
+    css: clouds-flash-alt
+    code: 0x30
+    uid: d05dd160c24e53afc4addd30b5655b74
+    search: [clouds, flash, weather]
+  -
+    css: sun-inv
+    code: 0x31
+    uid: c1306ee779029bed4f5a2b9b4f5c79e8
+    search: [sun, weather]
+  -
+    css: moon-inv
+    code: 0x32
+    uid: 2adfda136b09532bd8174b025b67fe87
+    search: [moon, weather]
+  -
+    css: cloud-sun-inv
+    code: 0x33
+    uid: 2c304ff49075ec9647f498504651abf5
+    search: [cloud, sun, weather]
+  -
+    css: cloud-moon-inv
+    code: 0x34
+    uid: c823149b79158a2bd56d802a6a6f1d1c
+    search: [cloud, moon, weather]
+  -
+    css: cloud-inv
+    code: 0x35
+    uid: 7162ef3c04c51e39b8670cfedb15bcc3
+    search: [cloud, weather]
+  -
+    css: cloud-flash-inv
+    code: 0x36
+    uid: 4bc859f73783486400fc769a90d0a8e0
+    search: [cloud, flash, weather]
+  -
+    css: drizzle-inv
+    code: 0x37
+    uid: 92234661a134ed625a779c534b242b3d
+    search: [rain, drizzle, weather]
+  -
+    css: rain-inv
+    code: 0x38
+    uid: 8d8a2d9bcc41c7ac794e83ffbb919c3c
+    search: [rain, drizzle, weather]
+  -
+    css: windy-inv
+    code: 0x39
+    uid: be6c21cbc48e60a39e80f8b2c33e360e
+    search: [windy, weather]
+  -
+    css: sunrise
+    code: 0x41
+    uid: 1c2a34e8bd2f8a53e3b059447a8e544f
+    search: [sun, sunrise, weather]
+  -
+    css: sun
+    code: 0x42
+    uid: 95fb2e5fdd1ea7e4a420b6ed330e6b08
+    search: [sun, weather]
+  -
+    css: moon
+    code: 0x43
+    uid: 34e68aa8fbf61f02a748043ccf448a3b
+    search: [moon, weather]
+  -
+    css: eclipse
+    code: 0x44
+    uid: 48ab39ab0ba664052cfbf0e52563246a
+    search: [eclipse, weather]
+  -
+    css: mist
+    code: 0x45
+    uid: a555120b3743d482efcc3058733d3fd9
+    search: [mist, fog, weather]
+  -
+    css: wind
+    code: 0x46
+    uid: 2efb5347832a09ae69de043f897ec4b9
+    search: [wind, weather]
+  -
+    css: snowflake
+    code: 0x47
+    uid: d0c325468a74095e565664bec2623aa3
+    search: [snowflake, weather]
+  -
+    css: cloud-sun
+    code: 0x48
+    uid: 9cd3e294ca3ad3dda66bc5a804021c46
+    search: [cloud, sun, weather]
+  -
+    css: cloud-moon
+    code: 0x49
+    uid: 2440f961b415837c6bf30424a6711708
+    search: [cloud, moon, weather]
+  -
+    css: fog-sun
+    code: 0x4a
+    uid: 957fd72e52a0e9eb585a0361114c4c83
+    search: [fog, sun, weather]
+  -
+    css: fog-moon
+    code: 0x4b
+    uid: dbf0f9c3d15e5e8046bb5f5fb5898b49
+    search: [fog, moon, weather]
+  -
+    css: fog-cloud
+    code: 0x4c
+    uid: aba39b610b88a73d81f0fa683649b92d
+    search: [fog, cloud, weather]
+  -
+    css: fog
+    code: 0x4d
+    uid: 2ca5a006e414e0827f7fc5b187689c04
+    search: [fog, weather]
+  -
+    css: cloud
+    code: 0x4e
+    uid: 17463471d0f132cee16835507ea51ecf
+    search: [cloud, weather]
+  -
+    css: cloud-flash
+    code: 0x4f
+    uid: cc1179bd34dcbe7bf80785075af60d37
+    search: [cloud, flash, weather]
+  -
+    css: cloud-flash-alt
+    code: 0x50
+    uid: 9af2b75a89bd99b83457f041df26da8b
+    search: [cloud, flash, weather]
+  -
+    css: drizzle
+    code: 0x51
+    uid: f59875f40cbc5ad1b04775cd96feabf1
+    search: [rain, drizzle, weather]
+  -
+    css: rain
+    code: 0x52
+    uid: d577552bb94bdeb53e6517873481aeea
+    search: [rain, drizzle, weather]
+  -
+    css: windy
+    code: 0x53
+    uid: 5fad7d41511701337ddd5ad9896edc4b
+    search: [windy, weather]
+  -
+    css: windy-rain
+    code: 0x54
+    uid: 86351391d6cbc7a85730414294139661
+    search: [windy, rain, weather]
+  -
+    css: snow
+    code: 0x55
+    uid: 127ed05f3c024a9c73487f18cf3d530d
+    search: [snow, weather]
+  -
+    css: snow-alt
+    code: 0x56
+    uid: 02bb2eaa1515b8fc954abbaf80212739
+    search: [snow, weather]
+  -
+    css: snow-heavy
+    code: 0x57
+    uid: 0f6059e468716a93329821bcbf11220d
+    search: [snow, weather]
+  -
+    css: hail
+    code: 0x58
+    uid: b500010a53f4807828ac252725dc6fd1
+    search: [hail, weather]
+  -
+    css: clouds
+    code: 0x59
+    uid: b215adc51ca2aa37e7bbe244d1fa52cc
+    search: [clouds, weather]
+  -
+    css: clouds-flash
+    code: 0x5a
+    uid: f4c428e42b86673278e98e6f2e0a8cd2
+    search: [clouds, flash, weather]

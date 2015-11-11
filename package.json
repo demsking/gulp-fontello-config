@@ -1,0 +1,40 @@
+{
+  "name": "gulp-fontello-config",
+  "version": "1.0.0",
+  "description": "Parse your HTML and generate the fontello config file",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "mocha test/test.js",
+    "coverage": "istanbul cover _mocha -- test/test.js -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demsking/gulp-fontello-config.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "fontello",
+    "fonts"
+  ],
+  "author": "Sébastien Demanou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/demsking/gulp-fontello-config/issues"
+  },
+  "homepage": "https://github.com/demsking/gulp-fontello-config#readme",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "event-stream": "^3.3.2",
+    "gulp-util": "^3.0.7",
+    "js-yaml": "^3.4.3"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "fontello-cli": "^0.4.0",
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3"
+  }
+}
