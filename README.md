@@ -28,7 +28,7 @@ In your HTML, add the name of the fontello font and the name of the glyph (icon)
 
 ```
 
-See `test/fixtures/build` for output.
+In your `gulpfile.js`, add the task:
 
 ```js
 
@@ -48,9 +48,11 @@ gulp.task('default', ['generate-fontello-fonts']);
 
 ```
 
+See `test/fixtures/build` for output.
+
+
 ### Usage with fontello-cli
 
-See `test/fixtures/assets` for output.
 
 ```js
 
@@ -72,3 +74,5 @@ exec('fontello-cli install --config ./test/fixtures/build/config.json --css ./te
 gulp.task('default', ['generate-fontello-fonts']);
 
 ```
+
+See `test/fixtures/assets` for output.
