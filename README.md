@@ -14,8 +14,6 @@ In your HTML, add the name of the fontello font and the name of the glyph (icon)
         <title>Test file</title>
     </head>
     <body>
-        <h1>Test file</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, consequuntur.</p>
         <i class="fontelico icon-emo-happy"></i>
         <i class="fontelico icon-spin6"></i>
         <i class="fontawesome icon-facebook"></i>
