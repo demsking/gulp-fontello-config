@@ -36,10 +36,10 @@ var stream = function(buffer) {
  */
 var glyphs_array = [];
 var selectors = {};
-var config = require('./config.json');
+var config = require(path.join(__dirname, 'config.json'));
 
-fs.readdirSync('./config').forEach(function(file) {
-    var doc = yaml.load(fs.readFileSync('./config/' + file, 'utf8'));
+fs.readdirSync(path.join(__dirname, 'config')).forEach(function(file) {
+    var doc = yaml.load(fs.readFileSync(path.join(__dirname, 'config', file), 'utf8'));
     var fileinfo = path.parse(file);
     var fontname = fileinfo.name;
     
