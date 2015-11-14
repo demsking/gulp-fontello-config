@@ -37,10 +37,10 @@ var gulp = require('gulp')
   , fontelloConfig = require('gulp-fontello-config');
 
 gulp.task('generate-fontello-fonts', function() {
-    gulp.src('test/fixtures/index.html')
+    gulp.src('test/src/index.html')
         .pipe(fontelloConfig())
         .pipe(rename('config.json'))
-        .pipe(gulp.dest('test/fixtures/build'));
+        .pipe(gulp.dest('build'));
 });
 
 // Gulp Default Task
@@ -48,10 +48,10 @@ gulp.task('default', ['generate-fontello-fonts']);
 
 ```
 
-See `test/fixtures/build` for output.
+See `build` for output.
 
 
-### Usage with fontello-cli
+Use the `fontello-cli` package to download your fonts.
 
 
 ```js
@@ -62,17 +62,90 @@ var gulp = require('gulp')
   , exec = require('child_process').exec;
 
 gulp.task('generate-fontello-fonts', function() {
-    gulp.src('test/fixtures/index.html')
+    gulp.src('test/src/index.html')
         .pipe(fontelloConfig())
         .pipe(rename('config.json'))
-        .pipe(gulp.dest('test/fixtures/build'));
+        .pipe(gulp.dest('build'));
 });
 
-exec('fontello-cli install --config ./test/fixtures/build/config.json --css ./test/fixtures/assets/css --font ./test/fixtures/assets/font');
+exec('fontello-cli install --config ./build/config.json --css ./test/src/assets/css --font ./test/src/assets/font');
 
 // Gulp Default Task
 gulp.task('default', ['generate-fontello-fonts']);
 
 ```
 
-See `test/fixtures/assets` for output.
+See `test/src/assets` for output.
+
+Now you can add the tag `link` in your HTML by using `gulp-inject-string`:
+
+
+```js
+
+var gulp = require('gulp'),
+    inject = require('gulp-inject-string');
+
+gulp.task('inject:after', function(){
+    gulp.src('test/src/index.html')
+        .pipe(inject.after('</title>', '\n<link rel="stylesheet" href="assets/css/fontello.css">\n'))
+        .pipe(gulp.dest('build'));
+});
+
+```
+
+
+### Using options
+
+You can use aliases to simplify your HTML code. For example, instead to use `fontawesome icon-facebook`, you can use `fa icon-facebook`.
+
+```html
+
+<html>
+  <head>
+    <title>Test file with alias and prefix</title>
+  </head>
+  <body>
+    <i class="fa fa-home"></i>
+    <i class="fa fa-book"></i>
+    <i class="fa fa-pencil"></i>
+    <i class="fa fa-cog"></i>
+  </body>
+</html>
+
+```
+
+In your `gulpfile.js`:
+
+```js
+
+var gulp = require('gulp')
+  , rename = require('gulp-rename')
+  , fontelloConfig = require('gulp-fontello-config');
+
+// The default options
+var options = {
+       name: 'fontello',        // The font name. Will be used as file name
+       prefix: 'fa-',           // The default css prefix
+       suffix: false,           // The css suffix
+       hinting: 1000,
+       units: 1000,             // Units per em
+       ascent: 85,
+       alias: {                 // Alias to use for parsing
+          fontawesome: 'fa',
+          fontelico: 'fo',
+          entypo: 'en'
+       },
+       done: function(config) { // The callback function
+            // you can change config object here
+            // config.glyphs contains glyphs
+       }
+    };
+
+gulp.task('generate-fontello-fonts', function() {
+    gulp.src('test/src/alias-with-prefix.html')
+        .pipe(fontelloConfig(options))
+        .pipe(rename('config.json'))
+        .pipe(gulp.dest('build'));
+});
+
+```
