@@ -80,11 +80,12 @@ module.exports = function(options) {
     var selectors_clone = JSON.parse(JSON.stringify(selectors));
     var glyphs = {};
     
-    options.prefix = options.prefix || config.css_prefix_text;
+    options = options || {};
 
-    options.alias = typeof options.alias == 'object' 
-                  ? options.alias || {} 
-                  : {};
+    options.prefix = options.prefix || config.css_prefix_text;
+    options.alias  = typeof options.alias == 'object'
+                   ? options.alias || {}
+                   : {};
 
     glyphs_array.forEach(function(glyph) {
         selectors_clone[glyph.src].push(options.prefix + glyph.css);
