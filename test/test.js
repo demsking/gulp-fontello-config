@@ -7,28 +7,92 @@ var fs = require('fs'),
     expect = require('chai').expect,
     fontelloConfig = require('../');
 
-var fixtureFile = fs.readFileSync(path.join(__dirname, './fixtures/index.html'));
+var indexFile = fs.readFileSync(path.join(__dirname, './src/index.html'));
+var aliasWithPrefixFile = fs.readFileSync(path.join(__dirname, './src/alias-with-prefix.html'));
 
 describe('gulp-fontello-config', function() {
 
-    describe('parse', function () {
+    describe('index.html', function () {
 
         var fakeFile;
 
         beforeEach(function() {
             fakeFile = new gutil.File({
-                base: 'test/fixtures',
+                base: 'test/src',
                 cwd: 'test/',
-                path: 'test/fixtures/index.html',
-                contents: new Buffer(fixtureFile)
+                path: 'test/src/index.html',
+                contents: new Buffer(indexFile)
             });
         });
 
-        it('should find fontello glyphs in the file', function(done){
-            var stream = fontelloConfig(function(config) {
-                assert.equal(true, config.glyphs instanceof Array);
-                assert.equal(6, config.glyphs.length);
-                done();
+        it('should find the 5 fontello named glyphs in the file', function(done) {
+            var stream = fontelloConfig({
+                done: function(config) {
+                    assert.equal(5, config.glyphs.length);
+                    done();
+                }
+            });
+
+            stream.write(fakeFile);
+        });
+        
+        it('should find the 9 fontello (named and aliased) glyphs in the file', function(done) {
+            var stream = fontelloConfig({
+                alias: {
+                    fontawesome: 'fa',
+                    fontelico: 'fo',
+                    entypo: 'en',
+                    typicons: 'ti',
+                    iconic: 'ic',
+                },
+                done: function(config) {
+                    assert.equal(9, config.glyphs.length);
+                    done();
+                }
+            });
+            
+            stream.write(fakeFile);
+        });
+
+        it('should find nothing fontello glyphs in the file', function(done) {
+            var stream = fontelloConfig({
+                prefix: 'fa-',
+                alias: {
+                    fontawesome: 'fa'
+                },
+                done: function(config) {
+                    assert.equal(0, config.glyphs.length);
+                    done();
+                }
+            });
+
+            stream.write(fakeFile);
+        });
+    });
+
+    describe('alias-with-prefix.html', function () {
+
+        var fakeFile;
+
+        beforeEach(function() {
+            fakeFile = new gutil.File({
+                base: 'test/src',
+                cwd: 'test/',
+                path: 'test/src/alias-with-prefix.html',
+                contents: new Buffer(aliasWithPrefixFile)
+            });
+        });
+
+        it('should find 4 glyphs in the file', function(done) {
+            var stream = fontelloConfig({
+                prefix: 'fa-',
+                alias: {
+                    fontawesome: 'fa'
+                },
+                done: function(config) {
+                    assert.equal(4, config.glyphs.length);
+                    done();
+                }
             });
 
             stream.write(fakeFile);
@@ -37,10 +101,10 @@ describe('gulp-fontello-config', function() {
     
     describe('_stream', function () {
         
-        it('should fail with a gulp-util.PluginError', function(done){
-            var stream = fontelloConfig._stream(null, { method: 'fail' });
+        it('should fail with a gulp-util.PluginError', function(done) {
+            var stream = fontelloConfig._stream();
             
-            stream.once('error', function(error){
+            stream.once('error', function(error) {
                 expect(error.plugin).to.equal('gulp-fontello-config');
                 done();
             });
