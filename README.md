@@ -122,7 +122,6 @@ var gulp = require('gulp')
   , rename = require('gulp-rename')
   , fontelloConfig = require('gulp-fontello-config');
 
-// The default options
 var options = {
        name: 'fontello',        // The font name. Will be used as file name
        prefix: 'fa-',           // The default css prefix
@@ -135,6 +134,8 @@ var options = {
           fontelico: 'fo',
           entypo: 'en'
        },
+       packs: ['meteocons'],    // Use this option to add all glyphs in the 
+                                // fonts pack meteocons for example
        done: function(config) { // The callback function
             // you can change config object here
             // config.glyphs contains glyphs

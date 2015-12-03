@@ -71,6 +71,7 @@ fs.readdirSync(path.join(__dirname, 'config')).forEach(function(file) {
  *           fontelico: 'fo',
  *           entypo: 'en'
  *        },
+ *        packs: [],          // A list of fontnames to add in the config file. eg. ['fontawesome', 'meteocons']
  *        done: function(config) {} // The callback function
  *     }
  * @param {object} options - A JSON object
@@ -81,11 +82,12 @@ module.exports = function(options) {
     var glyphs = {};
     
     options = options || {};
-
+    
     options.prefix = options.prefix || config.css_prefix_text;
     options.alias  = typeof options.alias == 'object'
                    ? options.alias || {}
                    : {};
+    options.packs  = options.packs || [];
 
     glyphs_array.forEach(function(glyph) {
         selectors_clone[glyph.src].push(options.prefix + glyph.css);
@@ -94,6 +96,15 @@ module.exports = function(options) {
 
     return stream(function(fileContents) {
         var $ = cheerio.load(fileContents);
+        
+        options.packs.forEach(function(fontname) {
+            if (selectors_clone[fontname]) {
+                selectors_clone[fontname].forEach(function(css) {
+                    selected_glyphs.push(glyphs[fontname + '-' + css]);
+                })
+                delete selectors_clone[fontname];
+            }
+        });
         
         for (var selector in selectors_clone) {
             let current_selector = '.' + selector;

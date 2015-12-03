@@ -99,6 +99,32 @@ describe('gulp-fontello-config', function() {
         });
     });
     
+    describe('font-packs', function () {
+        
+        var fakeFile;
+        
+        beforeEach(function() {
+            fakeFile = new gutil.File({
+                base: 'test/src',
+                cwd: 'test/',
+                path: 'test/src/alias-with-prefix.html',
+                contents: new Buffer(aliasWithPrefixFile)
+            });
+        });
+        
+        it('should add 47 glyphs of the font pack Meteocons', function(done) {
+            var stream = fontelloConfig({
+                packs: ['meteocons'],
+                done: function(config) {
+                    assert.equal(47, config.glyphs.length);
+                    done();
+                }
+            });
+            
+            stream.write(fakeFile);
+        });
+    });
+    
     describe('_stream', function () {
         
         it('should fail with a gulp-util.PluginError', function(done) {
