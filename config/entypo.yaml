@@ -457,14 +457,12 @@ glyphs:
     code: 0xe738
     from: 0xe800
     uid: 96ea1be71f597a5bdfc8f791ada4f651
-    css: archive
     search: [archive]
 
   - css: box
     code: 0x1f4e6
     uid: cc05df515bebe11df3ada0a5910a8f6d
     search: [box]
-
 
   - css: rss
     code: 0xe73a
@@ -733,7 +731,6 @@ glyphs:
   - css: left-bold
     code: 0xe4ad
     uid: 0222089fb4194cc714dcc1ffd2525c11
-    css: left-bold
     search: [arrow, left]
   - css: right-bold
     code: 0xe4ae
