@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/demsking/gulp-fontello-config#readme",
   "dependencies": {
-    "cheerio": "^0.19.0",
+    "cheerio": "^0.20.0",
     "event-stream": "^3.3.2",
     "gulp-util": "^3.0.7",
     "js-yaml": "^3.4.3"
